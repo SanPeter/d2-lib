@@ -1,0 +1,82 @@
+classes: {
+    dependance: {
+        target-arrowhead: {
+            shape: arrow
+        }
+        style: {
+            stroke: ${stroke.color}
+            stroke-dash: ${stroke.dash}
+            stroke-width: ${stroke.width}
+        }
+    }
+
+    association: {
+        target-arrowhead: {
+            shape: arrow
+        }
+        style: {
+            stroke: ${stroke.color}
+            stroke-width: ${stroke.width}
+        }
+    }
+
+    agregation: {
+        source-arrowhead: {
+            shape: diamond
+        }
+        target-arrowhead: {
+            shape: arrow
+        }
+        style: {
+            stroke: ${stroke.color}
+            stroke-width: ${stroke.width}
+        }
+    }
+
+    composition: {
+        source-arrowhead: {
+            shape: diamond
+            style.filled: true
+        }
+
+        target-arrowhead: {
+            shape: arrow
+        }
+        style: {
+            stroke: ${stroke.color}
+            stroke-width: ${stroke.width}
+        }
+    }
+
+    implementation: {
+        target-arrowhead: {
+            shape: triangle
+            style.filled: false
+        }
+        style: {
+            stroke: ${stroke.color}
+            stroke-dash: ${stroke.dash}
+            stroke-width: ${stroke.width}
+        }
+    }
+
+    heritage: {
+        target-arrowhead: {
+            shape: triangle
+            style.filled: false
+        }
+        style: {
+            stroke: ${stroke.color}
+            stroke-width: ${stroke.width}
+        }
+    }
+    
+}
+
+vars: {
+    stroke: {
+        color: "#000"
+        dash: 5
+        width: 1
+    }
+}
